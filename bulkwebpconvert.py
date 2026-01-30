@@ -47,7 +47,6 @@ if __name__ == "__main__":
                 file_name = file_path[len(path)+1:-5]
                 new_file_path = f".\\output\\{file_name}.png"
                 # print(f"Calling: {dwebp_path}, {file_path}, -o {new_file_path}")
-                # subprocess.run([dwebp_path, f"\"file_path\"", "-o" f"\"{new_file_path}\""])
                 subprocess.run(f"{dwebp_path} \"{file_path}\" -o \"{new_file_path}\"")
                 # print(f"Processed {file_name}")               
         else:
